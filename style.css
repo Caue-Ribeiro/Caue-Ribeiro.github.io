@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    position: absolute;
+    font-family: "Square", sans-serif;
+    font-size: 30px;
+    margin-left: 35%;
+    top: 50px;
+    max-width: 800px;
+    color: rgb(253, 89, 29);
+    text-shadow: 2px 2px 15px rgb(124, 124, 124);
+    letter-spacing: 2px;
+}
+
+.container {
+    background-color: #ff1616;
+    width: 380px;
+    height: 100vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 30px black;
+}
+
+video {
+    display: flex;
+    margin-left: 80px;
+}
+
+.inputs {
+    appearance: none;
+    border: none;
+    /* box-sizing: border-box; */
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+.inputs:hover {
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+#button {
+    align-items: center;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: orangered;
+    color: white;
+}
+@font-face {
+    font-family: Animated;
+    src: url(./fontes/Animated.ttf);
+}
+@font-face {
+    font-family: Square;
+    src: url(./fontes/Square\ Beat\ DEMO.otf);
+}
+#resultado {
+    font-family: "Animated", sans-serif;
+    margin-left: 22px;
+    margin-top: 40px;
+    font-size: 25px;
+    color: rgb(235, 235, 235);
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 15px black;
+}
+
+.container2 {
+    position: relative;
+    text-align: center;
+}
+
+#bbq-img {
+    float: right;
+    margin-top: 8%;
+    margin-right: 8%;
+    width: 800px;
+    z-index: -20;
+}
+
+@media screen and (max-width: 1380px) {
+    .container {
+        height: 657px;
+    }
+
+    #bbq-img {
+        width: 700px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .container {
+        height: 610px;
+    }
+
+    #bbq-img {
+        width: 600px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1110px) {
+    .container {
+        height: 610px;
+    }
+
+    #bbq-img {
+        width: 500px;
+        margin-top: 20%;
+    }
+
+    h3 {
+        font-size: 20px;
+        max-width: 400px;
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .container {
+        height: 610px;
+    }
+
+    #bbq-img {
+        width: 450px;
+        margin-top: 20%;
+    }
+
+    h3 {
+        font-size: 20px;
+        max-width: 400px;
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .container {
+        height: 610px;
+    }
+
+    #bbq-img {
+        width: 400px;
+        margin-top: 20%;
+    }
+
+    h3 {
+        font-size: 20px;
+        max-width: 400px;
+        margin-left: 50%;
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width: 895px) {
+    .container {
+        height: 610px;
+    }
+
+    #bbq-img {
+        width: 400px;
+        margin-top: 25%;
+        margin-right: 2%;
+    }
+
+    h3 {
+        font-size: 20px;
+        max-width: 400px;
+        margin-left: 52%;
+        margin-top: 1%;
+    }
+}
+@media screen and (max-width: 840px) {
+    .container {
+        height: 610px;
+    }
+
+    #bbq-img {
+        width: 350px;
+        margin-top: 25%;
+        margin-right: 2%;
+    }
+
+    h3 {
+        font-size: 20px;
+        max-width: 400px;
+        margin-left: 52%;
+        margin-top: 1%;
+    }
+}
+@media screen and (max-width: 790px) {
+    .container {
+        height: 610px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+
+    video {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+
+    .inputs {
+        margin: auto;
+        margin-bottom: 15px;
+        width: 500px;
+    }
+
+    #resultado {
+        text-align: center;
+    }
+
+    #bbq-img {
+        float: none;
+        width: 100vw;
+    }
+
+    h3 {
+        font-size: 30px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        height: 610px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+
+    video {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+
+    .inputs {
+        margin: auto;
+        margin-bottom: 15px;
+        width: 450px;
+    }
+
+    #resultado {
+        text-align: center;
+    }
+
+    #bbq-img {
+        float: none;
+        width: 100vw;
+    }
+
+    h3 {
+        font-size: 21px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 414px) {
+    .container {
+        height: 610px;
+        width: 110%;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+
+    video {
+        margin-left: 18%;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+
+    .inputs {
+        margin-left: 8%;
+        margin-bottom: 15px;
+        width: 350px;
+    }
+
+    #resultado {
+        margin-left: 0;
+        margin-right: 5%;
+    }
+
+    #bbq-img {
+        float: none;
+        width: 100vw;
+    }
+
+    h3 {
+        font-size: 15px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 390px) {
+    .container {
+        height: 610px;
+        width: 110%;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+
+    video {
+        margin-left: 16%;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+
+    .inputs {
+        margin-left: 5%;
+        margin-bottom: 15px;
+        width: 350px;
+    }
+
+    #resultado {
+        margin-left: 0;
+        margin-right: 8%;
+    }
+
+    #bbq-img {
+        float: none;
+        width: 100vw;
+    }
+
+    h3 {
+        font-size: 15px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 375px) {
+    .container {
+        height: 610px;
+        width: 110%;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+
+    video {
+        margin-left: 16%;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+
+    .inputs {
+        margin-left: 3%;
+        margin-bottom: 15px;
+        width: 350px;
+    }
+
+    #resultado {
+        margin-left: 0;
+        margin-right: 8%;
+    }
+
+    #bbq-img {
+        float: none;
+        width: 100vw;
+    }
+
+    h3 {
+        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
